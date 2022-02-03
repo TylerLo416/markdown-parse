@@ -27,5 +27,17 @@ public class MarkdownParseTest {
             assertEquals(expected, links);
         }
     }
+    @Test
+    public void test2() throws IOException {
+        ArrayList<String> expected = new ArrayList<>();
+        expected.add("");
+        List<String> list = List.of("empty-li.md");
+        for (String string : list) {
+            Path fileName = Path.of(string);
+	        String contents = Files.readString(fileName);
+            ArrayList<String> links = MarkdownParse.getLinks(contents);
+            assertEquals(expected, links);
+        }
+    }
 
 }
