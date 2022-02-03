@@ -18,7 +18,7 @@ public class MarkdownParseTest {
         ArrayList<String> expected = new ArrayList<>();
         //expected.add("https://something.com");
         //expected.add("some-page.html");
-        expected.add("");
+        //expected.add("");
         List<String> list = List.of("empty-link.md");
         for (String string : list) {
             Path fileName = Path.of(string);
@@ -30,7 +30,7 @@ public class MarkdownParseTest {
     @Test
     public void test2() throws IOException {
         ArrayList<String> expected = new ArrayList<>();
-        expected.add("");
+        //expected.add("");
         List<String> list = List.of("invalid-website.md");
 
         for (String string : list) {
