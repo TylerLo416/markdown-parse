@@ -19,7 +19,7 @@ public class MarkdownParseTest {
         //expected.add("https://something.com");
         //expected.add("some-page.html");
         //expected.add("");
-        List<String> list = List.of("empty-link.md");
+        List<String> list = List.of("empty-link.md"); 
         for (String string : list) {
             Path fileName = Path.of(string);
 	        String contents = Files.readString(fileName);
