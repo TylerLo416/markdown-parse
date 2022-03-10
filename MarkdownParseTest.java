@@ -44,10 +44,16 @@ public class MarkdownParseTest {
     @Test
     public void testSnippet1() throws IOException {
         ArrayList<String> expected = new ArrayList<>();
+<<<<<<< Updated upstream
         expected.add("`google.com");
         expected.add("google.com");
         expected.add("ucsd.edu");
         List<String> list = List.of("snippet1.md");
+=======
+        expected.add("https://ucsd-cse15l-w22.github.io/");
+        List<String> list = List.of("snippet3.md");
+
+>>>>>>> Stashed changes
         for (String string : list) {
             Path fileName = Path.of(string);
 	        String contents = Files.readString(fileName);
